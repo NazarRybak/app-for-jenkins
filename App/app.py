@@ -7,7 +7,7 @@ def handler(signum, frame):
 app = Flask(__name__) #екземпляр Flask
 
 signal.signal(signal.SIGALRM, handler)
-signal.alarm(15)
+signal.alarm(200)
 @app.route('/')  #декоратор маршруту для URL-адреси
 
 def hello_world():
